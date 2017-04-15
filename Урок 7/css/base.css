@@ -1,0 +1,56 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background: #d9d1d1;
+	font: 15px Arial;
+}
+h1{
+	color:#333030;
+}
+
+.flex-container,.flex-container1{
+	background: #ffffff;
+	border-radius: 5px;
+	
+	padding: 5px;
+}
+
+.flex-element,.flex-element1{
+	background: #749deb;
+	border-radius: 5px;
+	margin: 5px;
+	padding: 10px;
+	color:#fff;
+}
+.container1{
+	background: #00a7ff;
+	border-radius:3px; 
+		
+	
+}
+.element{
+	border:1px solid white;
+	border-radius: 3px;
+	padding: 5px;
+	
+}
+p{
+	color: white;
+}
+h2{
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
