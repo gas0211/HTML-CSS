@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Формы HTML</title>
+		<style>
+			.form-element{
+				margin-bottom: 15px;
+			}
+			label{
+				display: block;
+			}
+            .text{
+                border: 2px solid #3700cb;
+                border-radius: 10px;
+                padding: 3px 10px;
+                outline: none;
+                box-shadow: 2px 2px 1px 1px black;
+            }
+            input[type="submit"]{
+                background: #07bfce;
+                font-size: 20px;
+                border: none;
+                border-radius: 7px;
+                padding: 10px;
+                box-shadow: 2px 2px 1px 1px black;
+                cursor: pointer;
+                outline: none;
+            }
+            input[type="submit"]:hover{
+                background: #ce0707;
+            }
+		</style>
+    </head>
+	<body>
+		<form action="https://weblaboratory.in.ua/mail/" method="post">
+			<div class="form-element">
+				<label for="FirstNameForm1">Имя</label>
+				<input class="text" id="FirstNameForm1" name="FirstName" value="">
+			</div>
+			<div class="form-element">
+				<label for="LastName1">Фамилия</label>
+				<input class="text" id="LastName1" name="LastName" value="" required>
+			</div>
+              <div class="form-element">
+				<label>Пол</label>
+				<label><input type="radio"  name="sex" value="мужской">мужской</label>
+                <label><input type="radio"  name="sex" value="женский">женский</label>
+            </div>
+			<div class="form-element">
+				<label for="City1">Город</label>
+				<input class="text" id="City1" name="City" value="">
+			</div><br>
+			<div class="form-element">
+				<input class="text" name="Phone" value="" placeholder="Номер телефона">
+			</div><br>
+			<div class="form-element">
+				<input class="text" type="email" name="Mail" value="" placeholder="Электронная почта">
+			</div>
+            <div class="form-element">
+				<label>Вид деятельности</label>
+				<label><input type="checkbox"  name="work1" value="Обучающий центр">Обучающий центр</label>
+                <label><input type="checkbox"  name="work2" value="Интернет-магазин">Интернет-магазин</label>
+                <label><input type="checkbox"  name="work3" value="Розничный магазин">Розничный магазин</label>
+                <label><input type="checkbox"  name="work4" value="Частный мастер">Частный мастер</label>
+            </div>
+             <div class="form-element">
+				<label>Предполагаемые суммы закупок</label>
+				<label><input type="radio"  name="cash" value="до 5000 грн">до 5000 грн</label>
+                <label><input type="radio"  name="cash" value="5000-10000 грн">5000-10000 грн</label>
+                <label><input type="radio"  name="cash" value="10000-15000 грн">10000-15000 грн</label>
+                <label><input type="radio"  name="cash" value="свыше 15000 грн">свыше 15000 грн</label>
+            </div>
+            <div class="form-element">
+                <label>Пароль:</label>
+				<label><input class="text" type="password" name="password" value=""></label>
+			</div>
+              <div class="form-element">
+                <label>Документ об образовании</label>
+				<label><input class="text" type="file" name="diplom" value=""></label>
+			</div>
+            <div class="form-element">
+                <label>Дата начала деятельности</label>
+				<label><input class="text" type="date" name="data" value=""></label>
+			</div>
+            <div class="form-element">
+                <label>Сообщение</label>
+				<label>
+                    <textarea class="text" name="msg" placeholder="Написать сообщение">
+                    </textarea>
+                </label>
+			</div>
+            <div class="form-element">
+                <label></label>
+				<label><input type="range" name="range" value=""></label>
+			</div>
+               <div class="form-element">
+                <label></label>
+				<label><input type="color" name="color" value=""></label>
+			</div>
+             <div class="form-element">
+                <label></label>
+				<label>
+                    <select name="select">
+                        <option value="0">Выбери предмет</option>
+                        <option value="door">Дверь</option>
+                        <option value="window">Окно</option>
+                        <option value="phone">Телефон</option>
+                        <option value="pen">Ручка</option>
+                    </select>
+                </label>
+                  <label></label><br>
+				<label>
+                    <select class="text" name="selectmulti[]" multiple>
+                        <option value="0">Выбери предмет</option>
+                        <option value="door">Дверь</option>
+                        <option value="window">Окно</option>
+                        <option value="phone">Телефон</option>
+                        <option value="pen">Ручка</option>
+                        <option value="door">Дверь</option>
+                        <option value="window">Окно</option>
+                        <option value="phone">Телефон</option>
+                        <option value="pen">Ручка</option>
+                    </select>
+                </label>
+			</div>
+			
+			<input type="submit" value="Отправить форму">
+		</form>
+	</body>
+</html>
